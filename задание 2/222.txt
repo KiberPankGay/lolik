@@ -1,0 +1,15 @@
+Console.Write("x=");
+double x = double.Parse(Console.ReadLine()); //ввод
+
+double a = 5 - Math.Pow(x, 3);
+
+if (a < 0)
+{
+    Console.WriteLine("Ошибка: Выражение под корнем отрицательное (5 - Pow({0}, 3) = {1})", x, a);
+}
+else
+{
+    double y = Math.Sqrt(a); // вычисление крня
+    Console.WriteLine("Sqrt(5 - Pow({0}, 3))", x);
+    Console.Write("y = {0}", y);
+}
